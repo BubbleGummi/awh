@@ -1,0 +1,9 @@
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-xlarge: 1200px;
+
+$media-query-small: "only screen and (max-width: #{$breakpoint-small})";
+$media-query-medium: "only screen and (max-width: #{$breakpoint-medium})";
+$media-query-large: "only screen and (max-width: #{$breakpoint-large})";
+$media-query-xlarge: "only screen and (max-width: #{$breakpoint-xlarge})";
