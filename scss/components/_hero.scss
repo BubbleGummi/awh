@@ -1,30 +1,36 @@
 .hero {
-    background-image: linear-gradient(to top, $bottom-blue, $top-blue);
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-image: linear-gradient(to top, $bottom-blue, $top-blue);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $black;
+
+  .callout {
+    font-size: 2.5rem;
+    font-family: $font-montserrat;
+    font-weight: $font-weight-light;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-family: $font-montserrat;
+    font-weight: $font-weight-normal;
+    background-color: $yellow;
+    border: 2px solid $black;
     color: $black;
-
-    .callout {
-        font-size: 2.5rem;
-        font-family: $font-montserrat;
-        font-weight: $font-weight-light;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: darken($yellow, 10%);
     }
+  }
 
+  @media #{$media-query-small} {
     button {
-        padding: 1rem 2rem;
-        font-size: 1.5rem;
-        font-family: $font-montserrat;
-        font-weight: $font-weight-normal;
-        background-color: $yellow;
-        border: 2px solid $black;
-        color: $black;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        &:hover {
-            background-color: darken($yellow, 10%);
-        }
+      display: none;
     }
+  }
 }

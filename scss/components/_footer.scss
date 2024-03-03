@@ -1,47 +1,103 @@
-footer 
-
-.wrapper {
+footer {
     background-color: $black;
     color: $white;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-gap: 20px; 
-    padding: 2rem;
+    padding: 2rem 0;
     margin-top: 2rem;
-
-    .sitemap ul li{
+    .wrapper {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 1rem;
-
-    }
-    h4 {
-        color: $yellow;
-        font-family: $font-montserrat;
-        font-weight: $font-weight-bold;
-        font-size: 1.5rem;
-        margin: 0;
-    }
-
-    .community ul li{        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 1rem;
-    }
-    .company ul li{        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 1rem;
-    }
-
-    .social a, .social i{
-        display: flex;
-        flex-direction: row;
         justify-content: space-between;
-        margin-top: 1rem;
+        flex-direction: row;
+        font-family: $font-montserrat;
+        margin-bottom: 2rem;
+
+
+        .sitemap {
+            display: flex;
+            flex-direction: column;
+                        
+            h4 {
+                font-size: 1.3rem;
+                margin-bottom: 1.5rem;
+                color: $yellow;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    margin-bottom: 0.5rem;
+                }
+            }
+
+
+        }
+
+        .community {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            h4 {
+                font-size: 1.3rem;
+                margin-bottom: 1.5rem;
+                color: $yellow;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+
+        .company {
+            display: flex;
+            flex-direction: column;
+
+            h4 {
+                font-size: 1.3rem;
+                margin-bottom: 1.5rem;
+                color: $yellow;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    margin-bottom: 0.5rem;
+                }
+            }
+
+        }
+        .social {
+            h4 {
+                font-size: 1.3rem;
+                margin-bottom: 1.5rem;
+                color: $yellow;
+            }
+            a {
+                font-size: 1.5rem;
+                color: $white;
+                text-decoration: none;
+                margin-right: 1rem;
+            }
+
+        }
     }
 
+    @media #{$media-query-medium} {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+            .sitemap, .community, .company {
+                margin-bottom: 2rem;
+            }
+        }
+    }
 
-    
 }

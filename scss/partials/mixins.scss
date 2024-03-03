@@ -1,9 +1,11 @@
 $breakpoint-small: 576px;
 $breakpoint-medium: 768px;
-$breakpoint-large: 992px;
-$breakpoint-xlarge: 1200px;
+$breakpoint-large: 1175px;
+$breakpoint-nav: 858px; 
+$breakpont-nav-second: 696px;
 
 $media-query-small: "only screen and (max-width: #{$breakpoint-small})";
 $media-query-medium: "only screen and (max-width: #{$breakpoint-medium})";
 $media-query-large: "only screen and (max-width: #{$breakpoint-large})";
-$media-query-xlarge: "only screen and (max-width: #{$breakpoint-xlarge})";
+$media-query-nav: "only screen and (max-width: #{$breakpoint-nav})";
+$media-query-nav-second: "only screen and (max-width: #{$breakpont-nav-second})";
